@@ -1,0 +1,37 @@
+.latest
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.line
+{
+    height: 2px;
+    width: 65px;
+    background-color: orangered;
+    margin-bottom: 40px;
+}
+.card-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }    
+    .latest
+    {
+        margin-left: 10%;
+    }
+    .line
+    {
+        margin-left: 10%;
+    }
+}

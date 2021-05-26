@@ -1,0 +1,22 @@
+.LatestStories-container h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.LatestStories-container .LatestStories-card-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.LatestStories-container p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.LatestStories-container p i
+{
+    color: brown;
+    margin-left: 10px;
+}

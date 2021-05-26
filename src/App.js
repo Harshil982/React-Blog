@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import {BrowserRouter,Route} from 'react-router-dom';
+import './styles/header.css'
+import Gallery from './components/Gallery'
+import Latest from './components/Latest';
+import LatestStories from './components/LatestStories';
+import LatestArticle from './components/LatestArticle';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App()
+{
+  return(
+    <>
+      <BrowserRouter>
+        <Header />
+        <hr />
+        <Route path="/Home" />
+        <Route path="/Bollywood" />
+        <Route path="/Technology" />
+        <Route path="/Hollywood" />
+        <Route path="/Fitness" />
+        <Route path="/Food" />
+      </BrowserRouter>
+      <Gallery />
+      <Latest />
+      <LatestArticle />
+      <LatestStories />
+    </>
+  )
 }
-
 export default App;
