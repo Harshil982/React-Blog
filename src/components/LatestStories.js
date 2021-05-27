@@ -18,7 +18,7 @@ class LatestStories extends Component
                         <LatestStoriesCard />
                     </div>
                     <hr />
-                    <p>VIEW MORE  <i class="fad fa-long-arrow-right"></i></p>
+                    <p>VIEW MORE <i className="fas fa-arrow-right"></i></p>
                 </div>
             </>
         )

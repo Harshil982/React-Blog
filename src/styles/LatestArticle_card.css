@@ -1,0 +1,41 @@
+.Article-card
+{
+    height: auto;
+}
+.Article-card .card-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Article-card .card-container .content
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 40%;
+}
+.Article-card .card-container .content h2
+{
+    letter-spacing: 2px;
+}
+
+.Article-card .card-container .content p
+{
+    color: gray;
+    /* transform: scaleY(0); */
+    transition: .5s;
+}
+/* .Article-card .card-container .content:hover p
+{
+    transform: scaleY(1);
+} */
+.Article-card .card-container .content span
+{
+    color: black;
+    font-weight: 600;
+}
+.Article-card img
+{
+    height: 200px;
+    width: 320px;
+}

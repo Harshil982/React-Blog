@@ -2,6 +2,7 @@
 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin-top: 80px;
     margin-bottom: 5px;
 }
 .LatestStories-container .LatestStories-card-container
@@ -15,7 +16,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-.LatestStories-container p i
+.LatestStories-container p .fas
 {
     color: brown;
     margin-left: 10px;
