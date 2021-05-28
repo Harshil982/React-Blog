@@ -1,29 +1,30 @@
-import Header from './components/Header'
-import {BrowserRouter,Route} from 'react-router-dom';
+
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import './styles/header.css'
-import Gallery from './components/Gallery'
-import Latest from './components/Latest';
-import LatestStories from './components/LatestStories';
-import LatestArticle from './components/LatestArticle';
+import Bollywood from './components/Bollywood/Bollywood';
+import Home from './components/Home';
+import PagenotFound from './components/Pagenotfound';
 
 function App()
 {
   return(
     <>
       <BrowserRouter>
-        <Header />
-        <hr />
-        <Route path="/Home" />
-        <Route path="/Bollywood" />
-        <Route path="/Technology" />
-        <Route path="/Hollywood" />
-        <Route path="/Fitness" />
-        <Route path="/Food" />
+        <Switch>
+          <Route path="/Bollywood" component={Bollywood} exact/>
+          <Route path="/Technology" />
+          <Route path="/Hollywood" />
+          <Route path="/Fitness" />
+          <Route path="/Food" />
+          <Route path="/home" component={Home} exact/>
+          <Route path="/" component={Home} exact/>
+          <Route component={PagenotFound} />
+        </Switch>
       </BrowserRouter>
-      <Gallery />
+      {/* <Gallery />
       <Latest />
       <LatestArticle />
-      <LatestStories />
+      <LatestStories /> */}
     </>
   )
 }

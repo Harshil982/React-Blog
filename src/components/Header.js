@@ -15,12 +15,12 @@ class Header extends Component
                     </div>
                 </div>
                 <div className={"nav-style"}>
-                        <NavLink to="/Home" activeStyle={{color : "green"}}>Home</NavLink>
-                        <NavLink to="/Bollywood" activeStyle={{color : "green"}}>Bollywood</NavLink>
-                        <NavLink to="/Technology" activeStyle={{color : "green"}}>Technology</NavLink>
-                        <NavLink to="/Hollywood" activeStyle={{color : "green"}}>Hollywood</NavLink>
-                        <NavLink to="/Fitness" activeStyle={{color : "green"}}>Fitness</NavLink>
-                        <NavLink to="/Food" activeStyle={{color : "green"}}>Food</NavLink>
+                        <NavLink to="/" activeClassName="activeuse">Home</NavLink>
+                        <NavLink to="/Bollywood" activeClassName="activeuse">Bollywood</NavLink>
+                        <NavLink to="/Technology" activeClassName="activeuse">Technology</NavLink>
+                        <NavLink to="/Hollywood" activeClassName="activeuse">Hollywood</NavLink>
+                        <NavLink to="/Fitness" activeClassName="activeuse">Fitness</NavLink>
+                        <NavLink to="/Food" activeClassName="activeuse">Food</NavLink>
                 </div>
             </>
         )

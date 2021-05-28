@@ -4,6 +4,13 @@
     font-weight: 400;
     margin-left: 8%;
 }
+.top-heading .underline
+{
+    width: 20%;
+    height: 2px;
+    background-color: orangered;
+    margin-bottom: 10px;
+}
 .top-heading h1
 {
     margin-bottom: 5px;
@@ -27,7 +34,7 @@
     color: rgba(128, 128, 128, 0.479);
     opacity: 0.5;
 }
-.flex-cont div p 
+.toppost-body .flex-cont div p 
 {
     color: gray;
 }
@@ -44,4 +51,18 @@
 .flex-cont div
 {
     margin-left: 20px;
+}
+@media screen and (max-width : 600px) {
+    .flex-cont .number
+    {
+        display: none;
+    }
+    .toppost-body
+    {
+        margin-right: 20px;
+    }
+    .top-heading h1
+    {
+        padding-top: 30px;
+    }
 }

@@ -1,15 +1,15 @@
 import { Component } from "react";
-import CardImage from './images/cardimg_1.jpg'
 import './../styles/LatestCard.css'
 
 class LatestCard extends Component
 {
-    render()
+    render(props)
     {
+        console.log(this.props);
         return(
             <>
                 <div className={"card"}>
-                    <img src={CardImage} alt={"Joshua"} />
+                    <img src={this.props.src} alt={"Joshua"} />
                     <div className={"text-content"}>
                         <h3>Joshua Tree</h3>
                         <h3>Overnight Adventure</h3>

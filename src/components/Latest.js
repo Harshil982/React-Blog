@@ -1,6 +1,9 @@
 import { Component } from "react";
 import './../styles/Latest.css'
 import LatestCard from "./Latest_card";
+import CardImage1 from './images/cardimg_1.jpg'
+import CardImage2 from './images/img_6.jpg'
+import CardImage3 from './images/img_7.jpg'
 
 class Latest extends Component
 {
@@ -11,9 +14,9 @@ class Latest extends Component
                 <h1 className={"latest"}>The Latest</h1>
                 <div className={"line"}></div>
                 <div className={"card-container"}>
-                    <LatestCard />
-                    <LatestCard />
-                    <LatestCard />
+                    <LatestCard src={CardImage1}/>
+                    <LatestCard src={CardImage2} />
+                    <LatestCard src={CardImage3} />
                 </div>
             </>
         )

@@ -17,6 +17,7 @@
 .Article-card .card-container .content h2
 {
     letter-spacing: 2px;
+    color: black;
 }
 
 .Article-card .card-container .content p
@@ -34,8 +35,38 @@
     color: black;
     font-weight: 600;
 }
-.Article-card img
+.Article-card .card-container img
 {
     height: 200px;
     width: 320px;
+}
+@media only screen and (max-width: 600px) {
+    .Article-card .card-container
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .Article-card .card-container img
+    {
+        margin-left: 5%;
+        height: auto;
+        width: 40%;
+    }
+    .Article-card .card-container .content
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        width: 50%;
+        margin-left: 5%;
+    }
+    .Article-card .card-container .content h2
+    {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .Article-card .card-container .content p
+    {
+        font-size: 13px;
+    }
 }
