@@ -1,0 +1,49 @@
+.Author
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.Author img
+{
+    height: 80px;
+    width: 80px;
+}
+.Author div p
+{
+    margin-bottom: 0px;
+}
+.person-info
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Author .person-info div
+{
+    margin-left: 20px;
+}
+.date
+{
+    color: gray;
+}
+.fab
+{
+    font-size: 27px;
+    color: gray;
+    margin-left: 10px;
+    transition: .5s;
+}
+.socialmedia
+{
+    margin-top: 20px;
+}
+.fab:hover
+{
+    color: blue;
+    transform: translateY(-8px);
+}
+.fa-youtube-square:hover
+{
+    color: red;
+}

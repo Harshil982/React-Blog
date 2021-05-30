@@ -11,11 +11,13 @@ class Home extends Component
     {
         return(
             <>
-                <Header />
-                <Gallery />
-                <Latest />
-                <LatestArticle />
-                <LatestStories />
+                <div className={"body-margin"}>
+                    <Header />
+                    <Gallery />
+                    <Latest />
+                    <LatestArticle />
+                    <LatestStories />
+                </div>
             </>
         )
     }

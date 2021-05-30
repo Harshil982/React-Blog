@@ -49,22 +49,24 @@ class Bollywood extends Component
     {
         return(
             <>
-                <Header />
-                <div className={"bollywood-container"}>
-                    <div>
-                        <h1>Bollywood</h1>
-                        <div className={"line"}></div>
-                    </div>
-                    <div className={"bollywood-toppost"}>
-                        <TopPost />
-                    </div>
-                    {this.state.path.map((item)=>(
-                        <div key={item.id}>
-                            <Infocard src={item.src}/>
+                <div className={"body-margin"}>
+                    <Header />
+                    <div className={"bollywood-container"}>
+                        <div>
+                            <h1>Bollywood</h1>
+                            <div className={"line"}></div>
                         </div>
-                    ))}
-                    <div className={"advertisement"}>
-                        <p>Advertisement</p>
+                        <div className={"bollywood-toppost"}>
+                            <TopPost />
+                        </div>
+                        {this.state.path.map((item)=>(
+                            <div key={item.id}>
+                                <Infocard src={item.src}/>
+                            </div>
+                        ))}
+                        <div className={"advertisement"}>
+                            <p>Advertisement</p>
+                        </div>
                     </div>
                 </div>
             </>

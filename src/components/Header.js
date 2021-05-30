@@ -19,12 +19,12 @@ class Header extends Component
                     </div>
                 </div>
                 <div className={"nav-style"}>
-                        <NavLink exact activeClassName="activeuse" to="/">Home</NavLink>
-                        <NavLink  activeClassName="activeuse" to="/Bollywood">Bollywood</NavLink>
-                        <NavLink activeClassName="activeuse" to="/Technology">Technology</NavLink>
-                        <NavLink  activeClassName="activeuse" to="/Hollywood">Hollywood</NavLink>
-                        <NavLink  activeClassName="activeuse" to="/Fitness">Fitness</NavLink>
-                        <NavLink  activeClassName="activeuse" to="/Food">Food</NavLink>
+                        <NavLink exact activeClassName="activeuse" title="Click to Go to Home Page" to="/">Home</NavLink>
+                        <NavLink  activeClassName="activeuse" title="Click to Go to Bollywood Blogs" to="/Bollywood">Bollywood</NavLink>
+                        <NavLink activeClassName="activeuse" title="Click to Go to Technology Blogs" to="/Technology">Technology</NavLink>
+                        <NavLink  activeClassName="activeuse" title="Click to Go to Hollywood Blogs" to="/Hollywood">Hollywood</NavLink>
+                        <NavLink  activeClassName="activeuse" title="Click to Go to Fitness Blogs" to="/Fitness">Fitness</NavLink>
+                        <NavLink  activeClassName="activeuse" title="Click to Go to Food Blogs" to="/Food">Food</NavLink>
                 </div>
                 <hr className={"hr-line"}/>
             </>

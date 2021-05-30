@@ -1,0 +1,40 @@
+.art-cont
+{
+    font-size: 20px;
+}
+.appreciate
+{
+    position: fixed;
+    top: 40%;
+    left: 7%;
+    font-size: 25px;
+    color: gray;
+    opacity: 0.7;
+}
+.fa-share-alt,.fa-thumbs-up
+{
+    color: gray;
+    opacity: 0.7;
+}
+.appreciate span
+{
+    font-size: 18px;
+    margin-left: 30px;
+}
+.appreciate div
+{
+    margin-bottom: 30px
+}
+.related-topics
+{
+    margin-top: 20px;
+}
+.related-topics a
+{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.24);
+    padding: 5px;
+}
