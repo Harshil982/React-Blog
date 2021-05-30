@@ -12,10 +12,10 @@ function App()
       <BrowserRouter>
         <Switch>
           <Route path="/Bollywood" component={Bollywood} exact/>
-          <Route path="/Technology" />
-          <Route path="/Hollywood" />
-          <Route path="/Fitness" />
-          <Route path="/Food" />
+          <Route path="/Technology" exact/>
+          <Route path="/Hollywood" exact/>
+          <Route path="/Fitness" exact/>
+          <Route path="/Food" exact/>
           <Route path="/home" component={Home} exact/>
           <Route path="/" component={Home} exact/>
           <Route component={PagenotFound} />

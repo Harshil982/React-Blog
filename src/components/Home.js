@@ -12,7 +12,6 @@ class Home extends Component
         return(
             <>
                 <Header />
-                <hr />
                 <Gallery />
                 <Latest />
                 <LatestArticle />

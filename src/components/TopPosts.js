@@ -8,20 +8,27 @@ import ToppostCard from "./Toppost_card";
 
 class TopPost extends Component
 {
-    state = [
-        {
-            number : 2,
-            src : TopPostimage1
-        },
-        {
-            number : 3,
-            src : TopPostimage2
-        },
-        {
-            number : 4,
-            src : TopPostimage3
-        },
-    ]
+    constructor()
+    {
+        super();
+        this.state = {
+            data : [
+            {
+                number : 2,
+                src : TopPostimage1
+            },
+            {
+                number : 3,
+                src : TopPostimage2
+            },
+            {
+                number : 4,
+                src : TopPostimage3
+            },
+          ]
+        }
+    }
+    
     render()
     {
         return(
@@ -41,15 +48,15 @@ class TopPost extends Component
                     </div>
                     <hr />
                     <div className={"flex-cont"}>
-                        <ToppostCard source={this.state[0]}/>
+                        <ToppostCard source={this.state.data[0]}/>
                     </div>
                     <hr />
                     <div className={"flex-cont"}>
-                        <ToppostCard  source={this.state[1]}/>
+                        <ToppostCard  source={this.state.data[1]}/>
                     </div>
                     <hr />
                     <div className={"flex-cont"}>
-                        <ToppostCard  source={this.state[2]}/>
+                        <ToppostCard  source={this.state.data[2]}/>
                     </div>
                 </div>
             </>

@@ -19,7 +19,7 @@
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 150px;
+    height: auto;
     margin-top: 20px;
 }
 .flex-cont h2

@@ -14,6 +14,6 @@
 }
 @keyframes error
 {
-    from{opacity: 0.4 ; transform: scaleY(0);color: white;}
-    to {opacity: 1 ; transform: scaleY(1);color: white}
+    from{opacity: 0.4 ; transform: scale(0.6,0.6);color: white;}
+    to {opacity: 1 ; transform: scale(1,1);color: white}
 }

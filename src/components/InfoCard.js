@@ -1,7 +1,7 @@
 import { Component } from "react";
-import './../styles/LatestArticle_card.css'
+import './../styles/InfoCard.css'
 
-class LatestArticleCard extends Component
+class Infocard extends Component
 {
     render(props)
     {
@@ -23,4 +23,4 @@ class LatestArticleCard extends Component
         )
     }
 }
-export default LatestArticleCard;
+export default Infocard;
