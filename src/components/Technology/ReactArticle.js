@@ -35,7 +35,7 @@ class ReactArticle extends Component
                 <div className={"related-topics"}>
                     <Link to="#">React</Link>
                     <Link to="#">Javascript</Link>
-                    <Link to="https://www.instagram.com/" target="_blank">Animation</Link>
+                    <Link to="/instagram" target="_blank">Animation</Link>
                 </div>
                 <p><i className="fas fa-thumbs-up"></i><span>9.3K</span></p>
             </>
