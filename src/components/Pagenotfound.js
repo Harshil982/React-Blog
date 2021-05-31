@@ -8,11 +8,12 @@ class PagenotFound extends Component
     {
         return(
             <>
-                <Header/>
-                <hr />
-                <div className={"error"}>
-                    <h1>ERROR 404</h1>
-                    <h2>PAGE NOT FOUND</h2>
+                <div className={"body-margin"}>
+                    <Header/>
+                    <div className={"error"}>
+                        <h1>ERROR 404</h1>
+                        <h2>PAGE NOT FOUND</h2>
+                    </div>
                 </div>
             </>
         )

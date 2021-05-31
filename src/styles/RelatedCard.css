@@ -1,0 +1,24 @@
+.related-card
+{
+    width: 300px;
+    font-family: 'open-sans',sans-serif;
+}
+.related-card .poster
+{
+    width: 100%;
+}
+.related-card h1
+{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.664);
+}
+.related-card .author img
+{
+    width: 3.8em;
+    height: 3.8em;
+}
+.related-card .author p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}

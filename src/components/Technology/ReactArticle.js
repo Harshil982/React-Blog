@@ -5,6 +5,7 @@ import Program from './../images/prog.png'
 import './../../styles/ReactArticle.css'
 import AuthorInfo from "./AuthorInfo";
 import AuthorImg from './../images/avtar.png'
+import { WrittenBy } from "./WrittenBy";
 
 class ReactArticle extends Component
 {
@@ -35,9 +36,12 @@ class ReactArticle extends Component
                 <div className={"related-topics"}>
                     <Link to="#">React</Link>
                     <Link to="#">Javascript</Link>
-                    <Link to="/instagram" target="_blank">Animation</Link>
+                    <Link to="/google" target="_blank">Animation</Link>
                 </div>
-                <p><i className="fas fa-thumbs-up"></i><span>9.3K</span></p>
+                <p className={"likes"}><i className="fas fa-thumbs-up"></i><span>9.3K Likes</span></p>
+                <hr />
+                    <WrittenBy Authordata={this.state}/>
+                <hr />
             </>
         )
     }

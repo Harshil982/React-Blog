@@ -4,6 +4,7 @@
 }
 .appreciate
 {
+    z-index: -1;
     position: fixed;
     top: 40%;
     left: 7%;
@@ -37,4 +38,18 @@
     color: gray;
     background-color: rgba(128, 128, 128, 0.24);
     padding: 5px;
+}
+.likes
+{
+    font-size: 1.2em;
+}
+.likes .fa-thumbs-up
+{
+    margin-left: 3em;
+}
+.likes span
+{
+    margin-left: 1.1em;
+    color: gray;
+    font-family: 'Open-sans',sans-serif;
 }

@@ -1,0 +1,18 @@
+.writtenBy
+{
+    display: flex;
+    flex-direction: row;
+}
+.writtenBy div
+{
+    margin-left: 2em;
+    font-family: 'open-sans',sans-serif;
+}
+.writtenBy div p
+{
+    margin-bottom: 0;
+}
+.gray
+{
+    color: gray;
+}

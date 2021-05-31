@@ -19,7 +19,7 @@ function App()
           <Route path="/Food" exact/>
           <Route path="/home" component={Home} exact/>
           <Route path="/" component={Home} exact/>
-          <Route path="/instagram" component={() => { 
+          <Route path="/google" component={() => { 
               window.location.href = 'https://www.google.com/'; 
               return null;
           }}/>

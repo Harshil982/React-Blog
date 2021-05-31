@@ -21,7 +21,7 @@
     color: brown;
     margin-left: 10px;
 }
-@media screen and (max-width : 600px){
+@media screen and (max-width : 800px){
     .LatestStories-container h1
     {
         margin-left: 8%;

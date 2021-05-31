@@ -92,7 +92,7 @@
 {
     transform: scaleZ(1) scaleY(1);
 } */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .img2
     {
         display: none;

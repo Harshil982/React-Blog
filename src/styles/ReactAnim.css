@@ -8,3 +8,10 @@
 {
     width: 100%;
 }
+.Related-articles-cont
+{
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.158);
+    padding: 2em;
+    margin-top: 2em;
+}

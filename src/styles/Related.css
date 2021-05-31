@@ -1,0 +1,17 @@
+.related-container
+{
+    margin: 0 10%;
+}
+.related-container .more-from
+{
+    font-family: 'Open-sans',sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.related-container .related-card-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
