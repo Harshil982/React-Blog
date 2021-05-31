@@ -53,3 +53,9 @@
     color: gray;
     font-family: 'Open-sans',sans-serif;
 }
+@media screen and (max-width : 600px) {
+    .appreciate
+    {
+        display: none;
+    }
+}

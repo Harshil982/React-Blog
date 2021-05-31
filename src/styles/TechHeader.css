@@ -5,9 +5,11 @@ body
 }
 .tech-header
 {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 2px 7px gray;
+    width: 100%;
     /* padding: 10px; */
 }
 .tech-header img
@@ -33,4 +35,23 @@ body
     border: none;
     color: white;
     cursor: pointer;
+}
+@media screen and (max-width : 600px) {
+    .tech-header
+    {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        position: sticky;
+        top: 0;
+    }
+    .tech-header img
+    {
+        margin: 0;
+    }
+    .get-started
+    {
+        margin-top: 22px;
+        margin-right: 2em;
+    }
 }

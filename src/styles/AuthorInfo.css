@@ -51,3 +51,16 @@
 {
     color: violet;
 }
+@media screen and (max-width : 600px) {
+    .Author
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    .person-info
+    {
+        margin-top: 2em;
+    }
+}

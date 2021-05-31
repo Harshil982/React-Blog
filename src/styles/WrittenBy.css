@@ -12,7 +12,8 @@
 {
     margin-bottom: 0;
 }
-.gray
+.gray,.wgray
 {
     color: gray;
+    font-size: .8em;
 }

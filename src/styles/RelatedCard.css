@@ -17,8 +17,18 @@
     width: 3.8em;
     height: 3.8em;
 }
-.related-card .author p
+/* .related-card .author p
 {
     margin-top: 0;
     margin-bottom: 0;
+} */
+.author .wgray
+{
+    display: none;
+}
+@media screen and (max-width : 600px) {
+    .related-card
+    {
+        margin-top: 2em;
+    }
 }
