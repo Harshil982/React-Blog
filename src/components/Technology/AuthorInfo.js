@@ -5,6 +5,7 @@ class AuthorInfo extends Component
 {
     render(props)
     {
+        console.log(this.props)
         return(
             <>
                 <div className={"Author"}>

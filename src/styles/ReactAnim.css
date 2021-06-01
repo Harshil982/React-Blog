@@ -4,17 +4,28 @@
     margin-left: 32%;
     /* box-shadow: 0px 0px 20px black; */
 }
+.appreciate
+{
+    z-index: -1;
+    position: fixed;
+    top: 40%;
+    left: 7%;
+    font-size: 25px;
+    color: gray;
+    opacity: 0.7;
+}
 .react-article .fit
 {
     width: 100%;
 }
 .Related-articles-cont
-{
-    background-color: rgba(128, 128, 128, 0.158);
+{   
+    position: relative;
+    background-color: rgba(128, 128, 128);
     padding: 2em;
     margin-top: 2em;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .react-article
     {
         width: auto;

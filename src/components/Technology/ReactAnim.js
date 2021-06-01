@@ -14,6 +14,12 @@ class ReactAnim extends Component
                 <div className={"react-article"}>
                     <ReactArticle/>
                 </div>
+                <div className={"appreciate"}>
+                    <div>
+                        <i className="fas fa-thumbs-up"></i><span>9.3K</span>
+                    </div>
+                    <i className="fas fa-share-alt"></i><span>Share this article</span>
+                </div>
                 <div className={"Related-articles-cont"}>
                     <Related/>
                 </div>

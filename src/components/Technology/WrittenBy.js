@@ -5,6 +5,7 @@ export class WrittenBy extends Component
 {
     render(props)
     {
+        console.log(this.props)
         return(
             <>
                 <div className={"writtenBy"}>

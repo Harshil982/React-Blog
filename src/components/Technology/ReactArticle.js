@@ -27,12 +27,12 @@ class ReactArticle extends Component
                 </p>
                 <p className={"art-cont"}>Let's Talk About Them</p>
                 <img className={"fit"} src={Program} alt="ProgramPic" />
-                <div className={"appreciate"}>
+                {/* <div className={"appreciate"}>
                     <div>
                         <i className="fas fa-thumbs-up"></i><span>9.3K</span>
                     </div>
                     <i className="fas fa-share-alt"></i><span>Share this article</span>
-                </div>
+                </div> */}
                 <div className={"related-topics"}>
                     <Link to="#">React</Link>
                     <Link to="#">Javascript</Link>

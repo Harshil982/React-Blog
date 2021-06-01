@@ -4,13 +4,7 @@
 }
 .appreciate
 {
-    z-index: -1;
-    position: fixed;
-    top: 40%;
-    left: 7%;
-    font-size: 25px;
-    color: gray;
-    opacity: 0.7;
+   /* display: none; */
 }
 .fa-share-alt,.fa-thumbs-up
 {
@@ -53,7 +47,7 @@
     color: gray;
     font-family: 'Open-sans',sans-serif;
 }
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 800px) {
     .appreciate
     {
         display: none;
