@@ -70,6 +70,7 @@
 }
 .slideshow .myslide
 {
+    position: relative;
     text-align: center;
 }
 .slideshow .myslide .text-part
@@ -78,13 +79,14 @@
     font-weight: 400;
     letter-spacing: 2px;
     position: absolute;
-    top: 40%;
-    left: 30%;
+    bottom: 10%;
+    left: 10%;
     font-size: 23px;
-    color: white;
+    color: #ECF4F3;
 }
-.slideshow img
+.slideshow .myslide img
 {
+    height: 100%;
     width: 100%;
 }
 

@@ -45,6 +45,10 @@ class Bollywood extends Component
             }
         ]
     }
+    componentDidMount()
+    {
+        document.title = "Bollywwod Page";
+    }
     render()
     {
         return(

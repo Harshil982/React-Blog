@@ -6,14 +6,61 @@
     width: 100%;
     font-size: 50px;
     text-align: center;
-    text-shadow: 0px 0px 30px red;
+    /* text-shadow: 0px 0px 30px red; */
+    user-select: none;
+}
+.error h1
+{
+    margin-bottom: 0;
+}
+.error:hover
+{
+    text-decoration: underline;
+    text-shadow: 9px 10px 7px;
+}
+.error h2
+{
+    margin-top: 0;
 }
 .error 
 {
-    animation: error 2s ease-in-out infinite;
+    animation: error 2s ease-in-out infinite alternate;
 }
-@keyframes error
+/* @keyframes error
 {
-    from{opacity: 0.4 ; transform: scale(0.6,0.6);color: white;}
-    to {opacity: 1 ; transform: scale(1,1);color: white}
+    from{opacity: 0.4 ; transform: scale(0.6,0.6);color: red;}
+    to {opacity: 1 ; transform: scale(1,1);color: gold}
+} */
+
+@keyframes error {
+    0%
+    {
+        color: violet;
+        transform: scale(.5,.5);
+    }
+    14.28%
+    {
+        color: indigo;
+    }
+    28.56%
+    {
+        color: blue;
+    }
+    42.28%
+    {
+        color: green;
+    }
+    56.56%
+    {
+        color: yellow;
+    }
+    70.28%
+    {
+        color: orange;
+    }
+    100%
+    {
+        color: red;
+        transform: scale(1,1);
+    }
 }

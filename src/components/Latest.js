@@ -2,7 +2,7 @@ import { Component } from "react";
 import './../styles/Latest.css'
 import LatestCard from "./Latest_card";
 import CardImage1 from './images/cardimg_1.jpg'
-import CardImage2 from './images/img_6.jpg'
+import CardImage2 from './images/img_9.jpg'
 import CardImage3 from './images/img_7.jpg'
 
 class Latest extends Component

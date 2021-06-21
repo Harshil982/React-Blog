@@ -6,6 +6,10 @@ import Related from "./Related";
 
 class ReactAnim extends Component
 {
+    componentDidMount()
+    {
+        document.title = "Technology";
+    }
     render()
     {
         return(

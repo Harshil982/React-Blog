@@ -6,7 +6,8 @@ class Header extends Component
 {
     menu = (event) =>{
         console.log(event);
-        document.querySelector(".nav-style").classList.toggle("act")
+        document.querySelector(".nav-style").classList.toggle("act");
+        document.querySelector(".fa-bars").classList.toggle("fa-window-close")
     }
     render()
     {
@@ -18,7 +19,7 @@ class Header extends Component
                         <i className="fas fa-bars" onClick={this.menu}></i>
                     </div>
                     <div className={"nav-style"}>
-                        <NavLink exact activeClassName="activeuse" title="Click to Go to Home Page" to="/">Home</NavLink>
+                        <NavLink exact activeClassName="activeuse" title="Click to Go to Home Page" to="/home">Home</NavLink>
                         <NavLink  activeClassName="activeuse" title="Click to Go to Bollywood Blogs" to="/Bollywood">Bollywood</NavLink>
                         <NavLink activeClassName="activeuse" title="Click to Go to Technology Blogs" to="/Technology">Technology</NavLink>
                         <NavLink  activeClassName="activeuse" title="Click to Go to Hollywood Blogs" to="/Hollywood">Hollywood</NavLink>

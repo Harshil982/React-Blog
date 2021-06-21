@@ -2,10 +2,12 @@ import { Component } from "react";
 import './../styles/LatestArticle.css'
 import Infocard from "./InfoCard";
 import TopPost from "./TopPosts";
+import Carousel from 'react-elastic-carousel'
 import articleimage1 from './images/img_2.jpg'
 import articleimage2 from './images/img_8.jpeg'
 import articleimage3 from './images/img_9.jpg'
 import articleimage4 from './images/img_10.jpg'
+import articleimage5 from './images/img_6.jpg'
 
 class LatestArticle extends Component
 {
@@ -33,13 +35,36 @@ class LatestArticle extends Component
                         <p><i className="fas fa-arrow-down"></i> LOAD MORE</p>
                     </div>
                     <div className={"slideshow"}>
-                        <div className={"myslide"}>
-                            <img src={articleimage2} alt="slide1" />
-                            <div className={"text-part"}>
-                                <h3>Title Of Verticle Gallery</h3>
-                                <p>Travel / August 2017</p>
+                        <Carousel>
+                            <div className={"myslide"}>
+                                <img src={articleimage5} alt="slide1" />
+                                <div className={"text-part"}>
+                                    <h3>Title Of Verticle Gallery</h3>
+                                    <p>Travel / August 2017</p>
+                                </div>
                             </div>
-                        </div>
+                            <div className={"myslide"}>
+                                <img src={articleimage2} alt="slide2" />
+                                <div className={"text-part"}>
+                                    <h3>Title Of Verticle Gallery</h3>
+                                    <p>Travel / August 2017</p>
+                                </div>
+                            </div>
+                            <div className={"myslide"}>
+                                <img src={articleimage3} alt="slide3" />
+                                <div className={"text-part"}>
+                                    <h3>Title Of Verticle Gallery</h3>
+                                    <p>Travel / August 2017</p>
+                                </div>
+                            </div>
+                            <div className={"myslide"}>
+                                <img src={articleimage4} alt="slide4" />
+                                <div className={"text-part"}>
+                                    <h3>Title Of Verticle Gallery</h3>
+                                    <p>Travel / August 2017</p>
+                                </div>
+                            </div>
+                        </Carousel>
                     </div>
                 </div>
             </>
