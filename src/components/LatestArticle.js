@@ -58,7 +58,8 @@ class LatestArticle extends Component
                                 </div>
                             </div>
                             <div className={"myslide"}>
-                                <img src={articleimage4} alt="slide4" />
+                                {/* <img src={articleimage4} alt="slide4" /> */}
+                                <img src={process.env.PUBLIC_URL + '/img_10.jpg'} alt="slide4" />
                                 <div className={"text-part"}>
                                     <h3>Title Of Verticle Gallery</h3>
                                     <p>Travel / August 2017</p>

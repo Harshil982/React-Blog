@@ -2,55 +2,35 @@ import { Component } from "react";
 import Header from "../Header";
 import Infocard from "../InfoCard";
 import TopPost from "../TopPosts";
-import BTopPostiImg1 from './../images/img_8.jpeg'
-import BTopPostiImg2 from './../images/img_1.jpg'
-import BTopPostiImg3 from './../images/img_2.jpg'
-import BTopPostiImg4 from './../images/img_5.jpg'
-import BTopPostiImg5 from './../images/img_7.jpg'
-import BTopPostiImg6 from './../images/img_9.jpg'
-import BTopPostiImg7 from './../images/img_12.jpg'
+import axios from 'axios'
 import './../../styles/bollywood.css'
 
 class Bollywood extends Component
 {
     state = {
-        path : [
-            {
-                id : "card1",
-                src :BTopPostiImg1
-            },
-            {
-                id : "card2",
-                src :BTopPostiImg2
-            },
-            {
-                id : "card3",
-                src :BTopPostiImg3
-            },
-            {
-                id : "card4",
-                src :BTopPostiImg4
-            },
-            {
-                id : "card5",
-                src :BTopPostiImg5
-            },
-            {
-                id : "card6",
-                src :BTopPostiImg6
-            },
-            {
-                id : "card7",
-                src :BTopPostiImg7
-            }
-        ]
+        articledata : [],
+        topPost :[]
     }
-    componentDidMount()
+    constructor()
     {
-        document.title = "Bollywwod Page";
+        super();
+        document.title = "Bollywwod Blogs";
+        axios.get("http://localhost:3008/bollywood")
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    articledata : response.data.normalArticle,
+                    topPost : response.data.TopPostData 
+                })
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        console.log("fetching data")
     }
     render()
     {
+        console.log(this.state.topPost)
         return(
             <>
                 <div className={"body-margin"}>
@@ -61,11 +41,12 @@ class Bollywood extends Component
                             <div className={"line"}></div>
                         </div>
                         <div className={"bollywood-toppost"}>
-                            <TopPost />
+                            <TopPost topdata={this.state.topPost} />
                         </div>
-                        {this.state.path.map((item)=>(
+                        
+                        {this.state.articledata.map((item)=>(
                             <div key={item.id}>
-                                <Infocard src={item.src}/>
+                                <Infocard src={item}/>
                             </div>
                         ))}
                         <div className={"advertisement"}>

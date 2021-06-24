@@ -25,12 +25,13 @@ class TopPost extends Component
                 number : 4,
                 src : TopPostimage3
             },
-          ]
+          ],
         }
     }
     
-    render()
+    render(props)
     {
+        console.log(this.props);
         return(
             <>
                 <div className={"top-heading"}>
@@ -41,10 +42,22 @@ class TopPost extends Component
                     <img src={img2} alt="AB" />
                     <div className={"flex-cont"}>
                         <div>
-                            <h2>Catch Waves With an adventure guide</h2>
-                            <p><span>Travel</span> / August 2017</p>
+                            {this.props.topdata.map((item,index) => (
+                                <div key={index}>
+                                    {(item.number === "1") && <h2>{item.heading}</h2>}
+                                </div>
+                            ))}
+                            {this.props.topdata.map((item,index) => (
+                                <div key={index}>
+                                    {(item.number === "1") && <p>{item.type} / {item.date}</p>}
+                                </div>
+                            ))}
                         </div>
-                        <p className={"number"}>1</p>
+                        {this.props.topdata.map((item,index) => (
+                            <div key={index}>
+                                {(item.number === "1") && <p className={"number"}>{item.number}</p>}
+                            </div>
+                        ))}
                     </div>
                     <hr />
                     <div className={"flex-cont"}>

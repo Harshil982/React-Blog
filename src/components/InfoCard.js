@@ -11,11 +11,11 @@ class Infocard extends Component
                 <div className={"Article-card"}>
                     <hr/>
                     <div className={"card-container"}>
-                        <img src={this.props.src} alt="article"/>
+                        <img src={process.env.PUBLIC_URL + `${this.props.src.path}` }alt="article"/>
                         <div className={"content"}>
-                            <h2>Catch Waves With an adventure Guide</h2>
-                            <p>Gujrat is vastly underrated and it's a mystery to us why the region isn't more well known as a tourist designation.</p>
-                            <p><span>Travel</span> / August 21 2017</p>
+                            <h2>{this.props.src.ArticleHeading}</h2>
+                            <p>{this.props.src.description}</p>
+                            <p><span>{this.props.src.blogType}</span> / {this.props.src.date}</p>
                         </div>
                     </div>
                 </div>

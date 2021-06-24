@@ -3,7 +3,7 @@ import './../styles/LatestCard.css'
 
 class LatestCard extends Component
 {
-    render(props)
+    render()
     {
         console.log(this.props);
         return(
