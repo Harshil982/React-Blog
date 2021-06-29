@@ -60,29 +60,29 @@ module.exports = {
     TopPostData :
     [
         {
-            imgPath : "/img_8.jpeg",
-            heading : "Catch Waves With an adventure guide",
+            imgPath : "/img_11.jpg",
+            heading : "Catch Waves With an adventure guide1",
             type : "Travel",
             date : "August 2017",
             number : "1"
         },
         {
-            imgPath : "/img_5.jpg",
-            heading : "Catch Waves With an adventure guide",
+            imgPath : "/img_6.jpg",
+            heading : "Catch Waves With an adventure guide2",
             type : "Travel",
             date : "August 2017",
             number : "2"
         },
         {
-            imgPath : "/img_5.jpg",
-            heading : "Catch Waves With an adventure guide",
+            imgPath : "/img_9.jpg",
+            heading : "Catch Waves With an adventure guide3",
             type : "Travel",
             date : "August 2017",
             number : "3"
         },
         {
-            imgPath : "/img_5.jpg",
-            heading : "Catch Waves With an adventure guide",
+            imgPath : "/img_7.jpg",
+            heading : "Catch Waves With an adventure guide4",
             type : "Travel",
             date : "August 2017",
             number : "4"

@@ -15,6 +15,24 @@
 {
     margin-bottom: 5px;
 }
+.flex-cont-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-cont-1 .number
+{
+    font-size: 70px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.479);
+    opacity: 0.7;
+}
+.flex-cont-1 span
+{
+    color: black;
+    font-weight: 600;
+}
 .flex-cont
 {
     display: grid;
@@ -33,7 +51,7 @@
     margin-top: 20px;
     font-weight: 700;
     color: rgba(128, 128, 128, 0.479);
-    opacity: 0.4;
+    opacity: 0.7;
 }
 .toppost-body .flex-cont div p 
 {

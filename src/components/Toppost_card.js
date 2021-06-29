@@ -7,10 +7,10 @@ class ToppostCard extends Component
         console.log(this.props)
         return(
             <>
-                <img src={this.props.source.src} className={"sub-image"} alt="VK"/>
+                <img src={process.env.PUBLIC_URL + `${this.props.source.imgPath}` } className={"sub-image"} alt="VK"/>
                 <div>
-                    <p>Catch Waves With an adventure guide</p>
-                    <p><span>Travel</span> / August 2017</p>
+                    <p>{this.props.source.heading}</p>
+                    <p><span>{this.props.source.type}</span> / {this.props.source.date}</p>
                 </div>
                 <p className={"number"}>{this.props.source.number}</p>
             </>

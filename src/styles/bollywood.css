@@ -5,6 +5,14 @@
     display: grid;
     grid-template-columns: 70% auto;
 }
+a
+{
+    text-decoration: none;
+}
+a:visited
+{
+    text-decoration: none;
+}
 .bollywood-container div h1
 {
     margin-bottom: 8px;

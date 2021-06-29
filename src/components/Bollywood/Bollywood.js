@@ -2,7 +2,8 @@ import { Component } from "react";
 import Header from "../Header";
 import Infocard from "../InfoCard";
 import TopPost from "../TopPosts";
-import axios from 'axios'
+import  { Link } from 'react-router-dom';
+import axios from 'axios';
 import './../../styles/bollywood.css'
 
 class Bollywood extends Component
@@ -11,9 +12,8 @@ class Bollywood extends Component
         articledata : [],
         topPost :[]
     }
-    constructor()
+    componentDidMount()
     {
-        super();
         document.title = "Bollywwod Blogs";
         axios.get("http://localhost:3008/bollywood")
             .then((response) => {
@@ -46,7 +46,8 @@ class Bollywood extends Component
                         
                         {this.state.articledata.map((item)=>(
                             <div key={item.id}>
-                                <Infocard src={item}/>
+                                <Link to={`/Bollywood/${item.ArticleHeading}`}>
+                                <Infocard src={item}/></Link>
                             </div>
                         ))}
                         <div className={"advertisement"}>

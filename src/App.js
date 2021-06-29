@@ -12,6 +12,7 @@ function App()
     <>
       <BrowserRouter>
         <Switch>
+          <Route path="/Bollywood/:blog" render={() => <ReactAnim/>} exact/>
           <Route path="/Bollywood" component={Bollywood} exact/>
           <Route path="/Technology" component={ReactAnim} exact/>
           <Route path="/Hollywood" exact/>

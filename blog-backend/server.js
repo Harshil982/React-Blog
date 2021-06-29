@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 3008;
 const bollywoodData = require('./bollywoodData.js');
+const homePageData = require('./homePageData.js')
 
 app.use((req, res, next)=> {
     res.header("Access-Control-Allow-Origin", "*");
@@ -13,7 +14,7 @@ var cors = require('cors');
 app.use(cors());
 
 app.get('/' , (req,res) =>{
-    res.send("Hi hello harshil");
+    res.send(homePageData);
 })
 
 app.get('/bollywood' , (req,res) =>{

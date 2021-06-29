@@ -1,6 +1,5 @@
 import { Component } from "react";
 import './../styles/TopPosts.css'
-import img2 from './images/img_2.jpg'
 import TopPostimage1 from './images/img_8.jpeg'
 import TopPostimage2 from './images/img_9.jpg'
 import TopPostimage3 from './images/img_10.jpg'
@@ -39,17 +38,16 @@ class TopPost extends Component
                     <div className={"underline"}></div>
                 </div>
                 <div className="toppost-body">
-                    <img src={img2} alt="AB" />
-                    <div className={"flex-cont"}>
+                    {this.props.topdata.map((item,i)=> (
+                        <div key={i}>
+                            {(item.number === "1") && <img src={process.env.PUBLIC_URL + `${item.imgPath}` } alt="AB" />}
+                        </div>
+                    ))}
+                    <div className={"flex-cont-1"}>
                         <div>
                             {this.props.topdata.map((item,index) => (
                                 <div key={index}>
-                                    {(item.number === "1") && <h2>{item.heading}</h2>}
-                                </div>
-                            ))}
-                            {this.props.topdata.map((item,index) => (
-                                <div key={index}>
-                                    {(item.number === "1") && <p>{item.type} / {item.date}</p>}
+                                    {(item.number === "1") && <><h2>{item.heading}</h2><p><span>{item.type}</span> / {item.date}</p></>}
                                 </div>
                             ))}
                         </div>
@@ -60,17 +58,11 @@ class TopPost extends Component
                         ))}
                     </div>
                     <hr />
-                    <div className={"flex-cont"}>
-                        <ToppostCard source={this.state.data[0]}/>
-                    </div>
-                    <hr />
-                    <div className={"flex-cont"}>
-                        <ToppostCard  source={this.state.data[1]}/>
-                    </div>
-                    <hr />
-                    <div className={"flex-cont"}>
-                        <ToppostCard  source={this.state.data[2]}/>
-                    </div>
+                    {this.props.topdata.map((item,i) => (
+                        <div className={"flex-cont"} key={i}>
+                            {(item.number !== "1") && <ToppostCard source={item} />}
+                        </div>
+                    ))}
                 </div>
             </>
         )

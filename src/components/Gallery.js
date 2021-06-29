@@ -1,38 +1,51 @@
 import { Component } from "react";
-import img1 from './images/img_1.jpg'
-import img2 from './images/img_2.jpg'
+import axios from 'axios'
 import './../styles/gallery.css'
 
 class Gallery extends Component
 {
+    state = {
+        mainData : [],
+        otherData : []
+    }
+    componentDidMount()
+    {
+        axios.get("http://localhost:3008/")
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    mainData : response.data.mainGalleryData,
+                    otherData : response.data.otherGalleryData
+                })
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        console.log("fetching data")
+    }
     render()
     {
         return(
             <>
                 <div className={"grid-container"}>
-                    <div className={"grid-item1"}>
-                        <img src={img1} className={"img1"} alt="img1" />
+                    {this.state.mainData.map((item,index) => (
+                        <div className={"grid-item1"} key={index}>
+                        <img src={item.imgPath} className={"img1"} alt="img1" />
                         <div className={"text"}>
-                            <p className={"title"}>Title Of Verticle Gallery</p>
-                            <p className={"date"}>Travel / August 2017</p>
+                            <p className={"title"}>{item.title}</p>
+                            <p className={"date"}>{item.type} / {item.date}</p>
                         </div>
                     </div>
-                    <div className={"grid-item"}>
-                        <img src={img2} className={"img2"} alt="img2" />
+                    ))}
+                    {this.state.otherData.map((item,index) => (
+                        <div className={"grid-item"} key={item.id}>
+                        <img src={item.imgPath} className={"img2"} alt="img2" />
                         <div className={"text-cont"}>
-                            <p className={"title"}>The Sound Cloud</p>
-                            <p className={"title"}>You loved is doomed</p>
-                            <p className={"date"}>Travel / August 2017</p>
+                            <p className={"title"}>{item.title}</p>
+                            <p className={"date"}>{item.type} / {item.date}</p>
                         </div>
                     </div>
-                    <div className={"grid-item"}>
-                        <img src={img2} className={"img2"} alt="img2" />
-                        <div className={"text-cont"}>
-                            <p className={"title"}>The Sound Cloud</p>
-                            <p className={"title"}>You loved is doomed</p>
-                            <p className={"date"}>Travel / August 2017</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </>
         )

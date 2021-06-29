@@ -2,69 +2,65 @@ import { Component } from "react";
 import './../styles/LatestArticle.css'
 import Infocard from "./InfoCard";
 import TopPost from "./TopPosts";
-import Carousel from 'react-elastic-carousel'
-import articleimage1 from './images/img_2.jpg'
-import articleimage2 from './images/img_8.jpeg'
-import articleimage3 from './images/img_9.jpg'
-import articleimage4 from './images/img_10.jpg'
-import articleimage5 from './images/img_6.jpg'
+import Carousel from 'react-elastic-carousel';
+import axios from 'axios'
 
 class LatestArticle extends Component
 {
-    render()
+    state = {
+        latestArticle : [],
+        slideshow : []
+    }
+    componentDidMount()
     {
+        axios.get("http://localhost:3008/")
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    latestArticle : response.data.latestArticle,
+                    slideshow : response.data.slideshowData
+                })
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        console.log("fetching data")
+    }
+    render(props)
+    {
+        console.log(this.props);
+        console.log(this.state.latestArticle)
         return(
             <>
                 <h1 className={"article"}>Latest Articles</h1>
                 <div className={"line"}></div>
                 <div className={"grid-article"}>
-                    <Infocard src={articleimage1}/>
+                    {this.state.latestArticle.map((item,index) => (
+                        <div key={item.id}>
+                            <Infocard  src={item}/>
+                        </div>
+                    ))}
                     <div className={"ads"}>
                         <h3>Advertisement</h3>
                     </div>
-                    <Infocard  src={articleimage2}/>
-                    <Infocard  src={articleimage3}/>
-                    <div className={"temp"}>
-                        <Infocard  src={articleimage4}/>
-                    </div>
                     <p className={"more"}>LOAD MORE <i className="fas fa-arrow-right"></i></p>
                     <div className={"toppost"}>
-                        <TopPost />
+                        <TopPost topdata={this.props.topdata}/>
                     </div>
                     <div className={"loadmore"}>
                         <p><i className="fas fa-arrow-down"></i> LOAD MORE</p>
                     </div>
                     <div className={"slideshow"}>
                         <Carousel>
-                            <div className={"myslide"}>
-                                <img src={articleimage5} alt="slide1" />
-                                <div className={"text-part"}>
-                                    <h3>Title Of Verticle Gallery</h3>
-                                    <p>Travel / August 2017</p>
+                            {this.state.slideshow.map((item,index) => (
+                                <div className={"myslide"} key={item.id}>
+                                    <img src={item.imgPath} alt="slide4" />
+                                    <div className={"text-part"}>
+                                        <h3>{item.title}</h3>
+                                        <p>{item.type} / {item.date}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={"myslide"}>
-                                <img src={articleimage2} alt="slide2" />
-                                <div className={"text-part"}>
-                                    <h3>Title Of Verticle Gallery</h3>
-                                    <p>Travel / August 2017</p>
-                                </div>
-                            </div>
-                            <div className={"myslide"}>
-                                <img src={articleimage3} alt="slide3" />
-                                <div className={"text-part"}>
-                                    <h3>Title Of Verticle Gallery</h3>
-                                    <p>Travel / August 2017</p>
-                                </div>
-                            </div>
-                            <div className={"myslide"}>
-                                {/* <img src={articleimage4} alt="slide4" /> */}
-                                <img src={process.env.PUBLIC_URL + '/img_10.jpg'} alt="slide4" />
-                                <div className={"text-part"}>
-                                    <h3>Title Of Verticle Gallery</h3>
-                                    <p>Travel / August 2017</p>
-                                </div>
-                            </div>
+                            ))}
                         </Carousel>
                     </div>
                 </div>
