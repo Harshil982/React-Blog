@@ -9,9 +9,9 @@ class LatestCard extends Component
         return(
             <>
                 <div className={"card"}>
-                    <img src={this.props.src.imgPath} alt={"Joshua"} />
+                    <img src={this.props.src.path} alt={"Joshua"} />
                     <div className={"text-content"}>
-                        <h3>{this.props.src.heading}</h3>
+                        <h3>{this.props.src.ArticleHeading}</h3>
                         <p>{this.props.src.description}</p>
                         <p><span>{this.props.src.type}</span> / {this.props.src.date}</p>
                     </div>

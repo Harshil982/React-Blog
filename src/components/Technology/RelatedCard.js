@@ -7,7 +7,9 @@ class RelatedCard extends Component
 {
     state = {
         authorImage : avtar,
-        name : "Rajput Harshilsinh"
+        authorName : "Rajput Harshilsinh",
+        date : "August 2017",
+        readTime : "23 min",
     }
     render(props)
     {

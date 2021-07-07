@@ -10,17 +10,17 @@ class AuthorInfo extends Component
             <>
                 <div className={"Author"}>
                     <div className={"person-info"}>
-                        <img src={this.props.path.authorImage} alt="AuthorImage" />
+                        <img src={this.props.info.authorImage} alt="AuthorImage" />
                         <div>
-                            <p>{this.props.path.name}</p>
-                            <p className={"date"}>Jan 28,2019 10 min read</p>
+                            <p>{this.props.info.authorName}</p>
+                            <p className={"date"}>{this.props.info.date} {this.props.info.readTime}</p>
                         </div>
                     </div>
                     <div className={"socialmedia"}>
-                        <i className="fab fa-facebook-square"></i>
-                        <i className="fab fa-instagram-square"></i>
-                        <i className="fab fa-linkedin"></i>
-                        <i className="fab fa-youtube-square"></i>
+                        <a href={this.props.info.facebookId} target="_blank" rel="noreferrer"><i className="fab fa-facebook-square"></i></a>
+                        <a href={this.props.info.instagramId} target="_blank" rel="noreferrer"><i className="fab fa-instagram-square"></i></a>
+                        <a href={this.props.info.linkedinID} target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+                        <a href={this.props.info.youtubeId} target="_blank" rel="noreferrer"><i className="fab fa-youtube-square"></i></a>
                     </div>
                 </div>
             </>

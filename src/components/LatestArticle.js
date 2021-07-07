@@ -4,6 +4,7 @@ import Infocard from "./InfoCard";
 import TopPost from "./TopPosts";
 import Carousel from 'react-elastic-carousel';
 import axios from 'axios'
+import { Link } from "react-router-dom";
 
 class LatestArticle extends Component
 {
@@ -37,7 +38,13 @@ class LatestArticle extends Component
                 <div className={"grid-article"}>
                     {this.state.latestArticle.map((item,index) => (
                         <div key={item.id}>
-                            <Infocard  src={item}/>
+                            <Link to={{
+                                pathname: `/home/${item.ArticleHeading}`,
+                                state: {
+                                    item
+                                }
+                            }}>
+                            <Infocard  src={item}/></Link>
                         </div>
                     ))}
                     <div className={"ads"}>

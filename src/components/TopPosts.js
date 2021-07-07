@@ -1,5 +1,6 @@
 import { Component } from "react";
-import './../styles/TopPosts.css'
+import './../styles/TopPosts.css';
+import { Link } from 'react-router-dom';
 import TopPostimage1 from './images/img_8.jpeg'
 import TopPostimage2 from './images/img_9.jpg'
 import TopPostimage3 from './images/img_10.jpg'
@@ -40,14 +41,28 @@ class TopPost extends Component
                 <div className="toppost-body">
                     {this.props.topdata.map((item,i)=> (
                         <div key={i}>
-                            {(item.number === "1") && <img src={process.env.PUBLIC_URL + `${item.imgPath}` } alt="AB" />}
+                            {(item.number === "1") && 
+                            <Link to={{
+                                pathname : `/Bollywood/${item.ArticleHeading}`,
+                                state : {
+                                    item
+                                }
+                            }}>
+                            <img src={process.env.PUBLIC_URL + `${item.path}` } alt="AB" /></Link>}
                         </div>
                     ))}
                     <div className={"flex-cont-1"}>
                         <div>
                             {this.props.topdata.map((item,index) => (
                                 <div key={index}>
-                                    {(item.number === "1") && <><h2>{item.heading}</h2><p><span>{item.type}</span> / {item.date}</p></>}
+                                    {(item.number === "1") && 
+                                    <Link to={{
+                                        pathname : `/Bollywood/${item.ArticleHeading}`,
+                                        state : {
+                                            item
+                                        }
+                                    }}>
+                                    <h2>{item.ArticleHeading}</h2><p><span>{item.type}</span> / {item.date}</p></Link>}
                                 </div>
                             ))}
                         </div>
@@ -57,10 +72,16 @@ class TopPost extends Component
                             </div>
                         ))}
                     </div>
-                    <hr />
                     {this.props.topdata.map((item,i) => (
-                        <div className={"flex-cont"} key={i}>
-                            {(item.number !== "1") && <ToppostCard source={item} />}
+                        <div key={i}>
+                            {(item.number !== "1") &&
+                            <Link to={{
+                                pathname : `/Bollywood/${item.ArticleHeading}`,
+                                state : {
+                                    item
+                                }
+                            }}>
+                            <ToppostCard source={item} /></Link>}
                         </div>
                     ))}
                 </div>

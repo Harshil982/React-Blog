@@ -5,19 +5,22 @@ import Bollywood from './components/Bollywood/Bollywood';
 import Home from './components/Home';
 import PagenotFound from './components/Pagenotfound';
 import ReactAnim from './components/Technology/ReactAnim';
+import { Component } from 'react';
 
-function App()
+class App extends Component
 {
+  render(){
   return(
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/Bollywood/:blog" render={() => <ReactAnim/>} exact/>
+          <Route path="/Bollywood/:blog" component={ReactAnim} exact/>
           <Route path="/Bollywood" component={Bollywood} exact/>
           <Route path="/Technology" component={ReactAnim} exact/>
           <Route path="/Hollywood" exact/>
           <Route path="/Fitness" exact/>
           <Route path="/Food" exact/>
+          <Route path="/home/:blog" component={ReactAnim} exact/>
           <Route path="/home" component={Home} exact/>
           <Route path="/" component={Home} exact/>
           <Route path="/google" component={() => { 
@@ -28,6 +31,6 @@ function App()
         </Switch>
       </BrowserRouter>
     </>
-  )
+  )}
 }
 export default App;

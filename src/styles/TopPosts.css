@@ -20,6 +20,21 @@
     display: flex;
     justify-content: space-around;
 }
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+a:active
+{
+    text-decoration: none;
+    color: black;
+}
 .flex-cont-1 .number
 {
     font-size: 70px;

@@ -1,5 +1,6 @@
 import { Component } from "react";
-import './../styles/Latest.css'
+import './../styles/Latest.css';
+import { Link } from "react-router-dom";
 import LatestCard from "./Latest_card";
 
 class Latest extends Component
@@ -16,7 +17,13 @@ class Latest extends Component
                     <LatestCard src={CardImage3} /> */}
                     {this.props.data.map((item) => (
                         <div key={item.id}>
-                            <LatestCard src={item} />
+                            <Link to={{
+                                pathname: `/home/${item.ArticleHeading}`,
+                                state: {
+                                    item
+                                }
+                            }}>
+                            <LatestCard src={item} /></Link>
                         </div>
                     ))}
                 </div>

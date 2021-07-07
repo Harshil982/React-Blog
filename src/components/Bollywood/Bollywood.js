@@ -46,7 +46,12 @@ class Bollywood extends Component
                         
                         {this.state.articledata.map((item)=>(
                             <div key={item.id}>
-                                <Link to={`/Bollywood/${item.ArticleHeading}`}>
+                                <Link to={{
+                                    pathname : `/Bollywood/${item.ArticleHeading}`,
+                                    state : {
+                                        item
+                                    }
+                                }}>
                                 <Infocard src={item}/></Link>
                             </div>
                         ))}

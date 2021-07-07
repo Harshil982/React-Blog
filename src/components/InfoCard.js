@@ -8,7 +8,7 @@ class Infocard extends Component
         console.log(this.props)
         return(
             <>
-                <div className={"Article-card"}>
+                <div className={"Article-card"} title={this.props.src.ArticleHeading }>
                     <hr/>
                     <div className={"card-container"}>
                         <img src={process.env.PUBLIC_URL + `${this.props.src.path}` }alt="article"/>
