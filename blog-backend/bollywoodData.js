@@ -124,6 +124,7 @@ module.exports = {
     [
         {
             path : "/img_11.jpg",
+            url : "/Bollywood/Catch-Waves-With-an-adventure-guide1",
             otherImage : "/prog.png",
             ArticleHeading : "Catch Waves With an adventure guide1",
             completeInfo : "Turning away from the ledge, he started slowly down the mountain, deciding that he would, that very night, satisfy his curiosity about the man-house. In the meantime, he would go down into the canyon and get a cool drink, after which he would visit some berry patches just over the ridge, and explore among the foothills a bit before his nap-time, which always came just after the sun had walked past the middle of the sky. At that period of the day the sun’s warm rays seemed to cast a sleepy spell over the silent mountainside, so all of the animals, with one accord, had decided it should be the hour for their mid-day sleep.",
@@ -140,6 +141,7 @@ module.exports = {
         },
         {
             path : "/img_6.jpg",
+            url : "/Bollywood/Catch-Waves-With-an-adventure-guide2",
             otherImage : "/prog.png",
             ArticleHeading : "Catch Waves With an adventure guide2",
             completeInfo : "Green vines attached to the trunk of the tree had wound themselves toward the top of the canopy. Ants used the vine as their private highway, avoiding all the creases and crags of the bark, to freely move at top speed from top to bottom or bottom to top depending on their current chore. At least this was the way it was supposed to be. Something had damaged the vine overnight halfway up the tree leaving a gap in the once pristine ant highway.",
@@ -156,6 +158,7 @@ module.exports = {
         },
         {
             path : "/img_9.jpg",
+            url : "/Bollywood/Catch-Waves-With-an-adventure-guide3",
             otherImage : "/prog.png",
             ArticleHeading : "Catch Waves With an adventure guide3",
             completeInfo : "I haven't bailed on writing. Look, I'm generating a random paragraph at this very moment in an attempt to get my writing back on track. I am making an effort. I will start writing consistently again!There was little doubt that the bridge was unsafe. All one had to do was look at it to know that with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made quickly.",
@@ -172,6 +175,7 @@ module.exports = {
         },
         {
             path : "/img_7.jpg",
+            url : "/Bollywood/Catch-Waves-With-an-adventure-guide4",
             otherImage : "/prog.png",
             ArticleHeading : "Catch Waves With an adventure guide4",
             completeInfo : "Sometimes it's simply better to ignore the haters. That's the lesson that Tom's dad had been trying to teach him, but Tom still couldn't let it go. He latched onto them and their hate and couldn't let it go, but he also realized that this wasn't healthy. That's when he came up with his devious plan.The shoes had been there for as long as anyone could remember. In fact, it was difficult for anyone to come up with a date they had first appeared. It had seemed they'd always been there and yet they seemed so out of place. Why nobody had removed them was a question that had been asked time and again, but while they all thought it, nobody had ever found the energy to actually do it. So, the shoes remained on the steps, out of place in one sense, but perfectly normal in another.",

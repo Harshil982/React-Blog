@@ -43,7 +43,7 @@ class TopPost extends Component
                         <div key={i}>
                             {(item.number === "1") && 
                             <Link to={{
-                                pathname : `/Bollywood/${item.ArticleHeading}`,
+                                pathname : `${item.url}`,
                                 state : {
                                     item
                                 }
@@ -57,7 +57,7 @@ class TopPost extends Component
                                 <div key={index}>
                                     {(item.number === "1") && 
                                     <Link to={{
-                                        pathname : `/Bollywood/${item.ArticleHeading}`,
+                                        pathname : `${item.url}`,
                                         state : {
                                             item
                                         }
@@ -76,7 +76,7 @@ class TopPost extends Component
                         <div key={i}>
                             {(item.number !== "1") &&
                             <Link to={{
-                                pathname : `/Bollywood/${item.ArticleHeading}`,
+                                pathname : `${item.url}`,
                                 state : {
                                     item
                                 }

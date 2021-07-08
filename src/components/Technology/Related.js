@@ -12,17 +12,20 @@ class Related extends Component
             {
                 id :"1",
                 src : related1,
-                related : "Also tagged Reactjs"
+                related : "Also tagged Reactjs",
+                readTime : "20 min read"
             },
             {
                 id :"2",
                 src : related2,
-                related : "Related reads"
+                related : "Related reads",
+                readTime : "23 min read"
             },
             {
                 id :"3",
                 src : related3,
-                related : "Related reads"
+                related : "Related reads",
+                readTime : "25 min read"
             },
         ]
     }

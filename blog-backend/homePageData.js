@@ -213,31 +213,71 @@ module.exports = {
         [
             {
                 path: "/img_8.jpeg",
+                url : "/home/Catch-Waves-With-an-adventure-guide1",
                 ArticleHeading: "Catch Waves With an adventure guide1",
                 type: "Travel",
                 date: "August 2017",
-                number: "1"
+                number: "1",
+                otherImage: "/prog.png",
+                completeInfo: "Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.The spot was perfect for camouflage. At least that's what she thought when she picked the spot. She couldn't imagine that anyone would ever be able to see her in these surroundings. So there she sat, confident that she was hidden from the world and safe from danger. Unfortunately, she had not anticipated that others may be looking upon her from other angles, and now they were stealthily descending toward her hiding spot.",
+                authorName: "Aron Finch",
+                authorImage: "/avtar.png",
+                readTime: "10 min",
+                instagramId: "https://www.instagram.com/",
+                facebookId: "https://www.facebook.com/",
+                linkedinID: "https://in.linkedin.com/",
+                youtubeId: "https://www.youtube.com/"
             },
             {
                 path: "/img_6.jpg",
+                url : "/home/Catch-Waves-With-an-adventure-guide2",
                 ArticleHeading: "Catch Waves With an adventure guide2",
                 type: "Travel",
                 date: "August 2017",
-                number: "2"
+                number: "2",
+                otherImage: "/prog.png",
+                completeInfo: "Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.The spot was perfect for camouflage. At least that's what she thought when she picked the spot. She couldn't imagine that anyone would ever be able to see her in these surroundings. So there she sat, confident that she was hidden from the world and safe from danger. Unfortunately, she had not anticipated that others may be looking upon her from other angles, and now they were stealthily descending toward her hiding spot.",
+                authorName: "Mathew Wade",
+                authorImage: "/avtar.png",
+                readTime: "10 min",
+                instagramId: "https://www.instagram.com/",
+                facebookId: "https://www.facebook.com/",
+                linkedinID: "https://in.linkedin.com/",
+                youtubeId: "https://www.youtube.com/"
             },
             {
                 path: "/img_12.jpg",
+                url : "/home/Catch-Waves-With-an-adventure-guide3",
                 ArticleHeading: "Catch Waves With an adventure guide3",
                 type: "Travel",
                 date: "August 2017",
-                number: "3"
+                number: "3",
+                otherImage: "/prog.png",
+                completeInfo: "Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.The spot was perfect for camouflage. At least that's what she thought when she picked the spot. She couldn't imagine that anyone would ever be able to see her in these surroundings. So there she sat, confident that she was hidden from the world and safe from danger. Unfortunately, she had not anticipated that others may be looking upon her from other angles, and now they were stealthily descending toward her hiding spot.",
+                authorName: "Marks Stoinis",
+                authorImage: "/avtar.png",
+                readTime: "10 min",
+                instagramId: "https://www.instagram.com/",
+                facebookId: "https://www.facebook.com/",
+                linkedinID: "https://in.linkedin.com/",
+                youtubeId: "https://www.youtube.com/"
             },
             {
                 path: "/img_7.jpg",
+                url : "/home/Catch-Waves-With-an-adventure-guide4",
                 ArticleHeading: "Catch Waves With an adventure guide4",
                 type: "Travel",
                 date: "August 2017",
-                number: "4"
+                number: "4",
+                otherImage: "/prog.png",
+                completeInfo: "Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.The spot was perfect for camouflage. At least that's what she thought when she picked the spot. She couldn't imagine that anyone would ever be able to see her in these surroundings. So there she sat, confident that she was hidden from the world and safe from danger. Unfortunately, she had not anticipated that others may be looking upon her from other angles, and now they were stealthily descending toward her hiding spot.",
+                authorName: "Tom Latham",
+                authorImage: "/avtar.png",
+                readTime: "10 min",
+                instagramId: "https://www.instagram.com/",
+                facebookId: "https://www.facebook.com/",
+                linkedinID: "https://in.linkedin.com/",
+                youtubeId: "https://www.youtube.com/"
             }
         ],
     latestStories:
