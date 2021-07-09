@@ -27,7 +27,8 @@ class Home extends Component
             .catch((error) => {
                 console.log(error)
             })
-        console.log("fetching data")
+        console.log("fetching data");
+        document.title = "Blog";
     }
     render()
     {

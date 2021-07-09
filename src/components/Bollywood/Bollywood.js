@@ -4,7 +4,8 @@ import Infocard from "../InfoCard";
 import TopPost from "../TopPosts";
 import  { Link } from 'react-router-dom';
 import axios from 'axios';
-import './../../styles/bollywood.css'
+import './../../styles/bollywood.css';
+import './../../styles/TopPosts.css';
 
 class Bollywood extends Component
 {
@@ -37,7 +38,7 @@ class Bollywood extends Component
                     <Header />
                     <div className={"bollywood-container"}>
                         <div>
-                            <h1>Bollywood</h1>
+                            <h1 className={"bolly"}>Bollywood</h1>
                             <div className={"line"}></div>
                         </div>
                         <div className={"bollywood-toppost"}>

@@ -6,11 +6,9 @@ import './../../styles/ReactAnim.css'
 import Related from "./Related";
 
 class ReactAnim extends Component {
-    componentDidMount() {
-        document.title = "Technology";
-    }
     render(props) {
         console.log(this.props);
+        document.title = `${this.props.location.state.item.ArticleHeading}`
         return (
             <>
                 {/* <TechHeader />
