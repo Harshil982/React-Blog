@@ -6,6 +6,10 @@ import './../../styles/ReactAnim.css'
 import Related from "./Related";
 
 class ReactAnim extends Component {
+    componentDidMount()
+    {
+        window.scrollTo(0, 0);
+    }
     render(props) {
         console.log(this.props);
         document.title = `${this.props.location.state.item.ArticleHeading}`
